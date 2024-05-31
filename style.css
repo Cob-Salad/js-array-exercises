@@ -1,5 +1,19 @@
 
-.button{
-    font-size: 25px;
+button{
+    font-size: 20px;
+    animation: example 2.5s infinite;
+    background-color: grey;
+}
 
+
+@keyframes example{
+    0% {background-color: aqua;}
+    50% {font-size: 50px;}
+    15% {background-color: rgb(235, 148, 148);}
+    30% {background-color: rgb(126, 126, 247);}
+    45% {background-color: blueviolet;}
+    60% {background-color: rgb(125, 125, 237);}
+    75% {background-color: rgb(209, 123, 123);}
+    90% {background-color: blanchedalmond;}
+    100% {background-color: aqua;}
 }

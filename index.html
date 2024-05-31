@@ -11,21 +11,38 @@
         <h1>array exercises</h1>
     </header>
 
+    <div>
+        <section>
+            <h2>looping through arrays</h2>
+            <button class="dropdownButton">loops</button>
+            <div class="dropdown">
+                <button class="dropdownButton" style="border-left:1px solid navy">
+                    <i class="fa fa-caret-down">hello</i>
+                </button>
+                <div class="dropdownContent">
+                    <button type="button" onclick="loop1()">loop1</button>
+                    <button type="button" onclick="loop2()">loop2</button>
+                    <button type="button" onclick="loop3()">loop3</button> 
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>looping through arrays</h2>
-        <button type="button" onclick="loop1()">loop1</button>
-        <button type="button" onclick="loop2()">loop2</button>
-        <button type="button" onclick="loop3()">loop3</button> 
-    </section>
+        <section>
+            <h2>Map and Filter</h2>
+            <button id="button" type="button" onclick="map1()">map1</button> 
+            <button type="button" onclick="map2()">map2</button> 
+            <button type="button" onclick="map3()">map3</button>  
+            <button type="button" onclick="testNumberFilter()">Filter 0 - 5</button>   
+            <button type="button" onclick="oddFilter()">Odd Filter</button>   
+             <button type="button" onclick="filterModifyArray()">filter 8 - 15</button>   
 
-    <section>
-        <h2>Map and Filter</h2>
-        <button type="button" onclick="map1()">map1</button> 
-        <button type="button" onclick="map2()">map2</button> 
-        <button type="button" onclick="map3()">map3</button>  
-    </section>
-
+        </section>
+        <section>
+            <h2>add from array</h2>
+            <button type="button" onclick="addFromArray()">Add From Array</button>   
+ 
+        </section>
+    </div>
 
     <script src="index.js"></script>
 </body>

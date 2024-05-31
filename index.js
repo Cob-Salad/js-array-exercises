@@ -89,3 +89,96 @@ const map3 = () => {
     console.log(changed)    
 }
 
+const testNumberFilter = () => {
+    const nums = [1, 3, 2, 34, 7, 5, 10];
+    let filteredNumbers = numberFilterFor(nums);
+    console.log(filteredNumbers);
+    filteredNumbers = numberFilterWhile(nums);
+    console.log(filteredNumbers);
+    filteredNumbers = numberFilterFilter(nums);
+    console.log(filteredNumbers);
+}
+
+
+
+const numberFilterFor = (numbers) => {
+    const result = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] >= 0 && numbers[i] <= 5){
+            result.push(numbers[i])
+        }
+    }
+    return result;
+}
+
+
+const numberFilterWhile = (numbers) => {
+    const result = [];
+    let i = 0
+    while (i < numbers.length) {
+        if (numbers[i] >= 0 && numbers[i] <= 5){
+            result.push(numbers[i])
+        }
+        i++ 
+    }
+    return result;
+}
+
+const checkNumber = (numbers) => {
+    return numbers >= 0 && numbers <=5;
+}
+
+const numberFilterFilter = (numbers) => {
+    const result = numbers.filter(checkNumber);
+    return result;
+}
+
+
+const oddFilter = () => {
+    const input = prompt("input an array of numbers separated by commas: (1,2,3,4...)")
+    const inputArray = input.split(",")
+    const oddArray = []
+    for (let i = 0; i < inputArray.length; i++) {
+        const num = Number(inputArray[i])
+        if (num % 2 !== 0){
+            oddArray.push(num)
+        }
+    }
+    for (let i = 0; i < oddArray.length; i++){
+        console.log(oddArray[i])
+    }
+}
+
+
+const arrayFilter = (filterArray) => {
+    return filterArray >= 8 && filterArray <= 15;
+}
+
+const filterModifyArray = () => {
+    const setForArray = [1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let i = 0
+    while (i < setForArray.length){
+        if (setForArray[i] < 8 || setForArray[i] > 15){
+            setForArray.splice(i, 1)
+
+        }else{
+            i++
+        }
+    }
+    console.log(setForArray)
+    console.log()
+}
+const addArray = [1,2,4,5,6,7,10]
+
+const addFromArray = (addArray) => {
+    
+    let total = 0
+    for (let i = 0; i < addArray.length; i++){
+        total = total + addArray[i];
+        console.log(total);
+    }
+    return total;
+}
+
+
+
